@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: hsla(165, 81%, 93%, 0.5);
+    /* background-color: #a1d3ef; */
+    color: rgb(17, 63, 163);
+    /* color: rgba(17, 63, 163, 0.5) */
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+span {
+    text-decoration: underline;
+}
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black; /* (hor, vert, espalhamento, cor) */
+    position: relative;
+}
+figure.foto-legenda img {
+    height: 100%;
+    width: 100%;
+    
+}
+figure.foto-legenda figcaption {
+    background-color: rgba(0, 0, 0, .4);
+    box-sizing: border-box;  /* um box dentro da borda*/
+    color: white;
+    height: 100%;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    transition: opacity 1s;
+    top: 0px;
+    width: 100%;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
